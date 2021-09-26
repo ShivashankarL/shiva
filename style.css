@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+nav .logo{
+	font-size: 20px;
+	color: #fff;
+	font-weight: 600;
+
+}
+.home{
+	margin: 0px;
+	padding: 0px;
+	height: 90vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-weight: 350;
+	font-size: 80px;
+	
+
+}
+
+
+.home .hello{
+	color: crimson;
+}
+
+#click{
+	display: none;
+}
+nav{
+	height: 80px;
+	background: #1b1b1b;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 50px 0px 100px;
+}
+nav ul{
+	display: flex;
+	list-style: none;
+}
+
+nav ul li{
+	margin:0 5px;
+}
+
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	padding: 8px 10px;
+	border-radius:5px;
+	transition: all 0.3 ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+	background: #fff;
+	color: #1b1b1b;
+}
+
+nav .menu-btn i{
+	color: #fff;
+	font-size: 22px;
+	cursor: pointer;
+	display: none;
+}
+#click:checked ~ ul{
+	left: 0%;
+}
+
+.about 
+{
+	width: 100%;
+	padding: 78px 0px;
+	background: #191919;
+}
+
+.about img{
+	height: auto;
+	width: 350px;
+}
+.about-text{
+	width: 50%;
+}
+.main{
+	width: 100%;
+	max-width: 95%;
+	margin:  0auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.about-text h1{
+	color: white;
+	font-size: 80px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text h5{
+	color: white;
+	font-size: 25px;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+}
+
+.about-text p{
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+
+}
+span {
+	color: #f9004d;
+}
+.follow
+{
+	color: white;
+	padding: 20px 50px 50px 50px;
+}
+
+.follow ul li{
+	list-style: none;
+	display: inline-block;
+}
+.follow ul li i{
+	list-style: none;
+	display: inline-block;
+	padding: 20px 20px;
+	border-radius:5px;
+	cursor: pointer;
+	
+}
+.follow ul li i:hover{
+	font-size: 30px;
+	color: #f9004d;
+	
+}
+@media (max-width:940px)
+{
+
+nav .menu-btn i{
+	display: block;
+}
+
+#click:checked ~ .menu-btn i:before{
+	content: "\f00d";
+}
+		nav ul{
+		position: fixed;
+		top: 80px;
+		left: -100%;
+		background: #111;
+		display: block;
+		height: 100vh;
+		width: 100%;
+		text-align: center;
+		transition: all ease 0.3s;
+
+	}
+
+	nav ul li{
+			margin-top: 80px;
+	}
+
+	
+	
+	nav ul li a:hover,
+	nav ul li a.active{
+		background: none;
+		color: cyan;
+
+	}
+}

@@ -182,3 +182,28 @@ nav .menu-btn i{
 
 	}
 }
+
+@media (max-width:488px)
+{
+	.home{
+		font-size: 35px;
+	}
+	
+	nav{
+		padding: 0px 10px 0px 10px;
+		
+	}
+}
+
+@media (max-width:342px)
+{
+	.home{
+		font-size: 20px;
+	}
+	
+	nav{
+		padding: 0px 10px 0px 10px;
+		
+	}
+}
+

@@ -18,11 +18,11 @@ nav .logo{
 	padding: 0px;
 	height: 90vh;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	font-weight: 350;
-	font-size: 80px;
+	font-size: 60px;
 	
 
 }
@@ -37,6 +37,7 @@ nav .logo{
 }
 nav{
 	height: 80px;
+	width: 100%;
 	background: #1b1b1b;
 	display: flex;
 	align-items: center;
@@ -118,6 +119,9 @@ nav .menu-btn i{
 	letter-spacing: 1px;
 	line-height: 28px;
 	font-size: 18px;
+	text-align: justify;
+	text-justify: interword;
+
 
 }
 span {
@@ -136,19 +140,35 @@ span {
 .follow ul li i{
 	list-style: none;
 	display: inline-block;
-	padding: 20px 20px;
+	padding: 20px 10px;
 	border-radius:5px;
 	cursor: pointer;
+	width: 100%;
 	
 }
 .follow ul li i:hover{
-	font-size: 30px;
-	color: #f9004d;
 	
+	color: #f9004d;
 }
-@media (max-width:940px)
+@media (max-width:956px)
 {
-
+.home{
+	font-size: 50px;
+}
+.main{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.main h1{
+	font-size: 35px;
+}
+.about-text{
+	width: 80%;
+}
+.main img{
+	clip-path: circle();
+}
 nav .menu-btn i{
 	display: block;
 }
@@ -193,6 +213,11 @@ nav .menu-btn i{
 		padding: 0px 10px 0px 10px;
 		
 	}
+	.follow ul li i{
+	font-size: 20px;
+	padding: 2px 2px;
+	
+}
 }
 
 @media (max-width:342px)
@@ -207,3 +232,69 @@ nav .menu-btn i{
 	}
 }
 
+@media (max-width:729px)
+{
+	.follow ul li i{
+	
+	padding: 10px 10px;
+	
+	
+}
+}
+
+@media (max-width:601px)
+{
+	.follow ul li i{
+	font-size: 35px;
+	padding: 10px 10px;
+	
+	
+}
+}
+@media (max-width:513px)
+{
+	.follow ul li i{
+	font-size: 25px;
+	padding: 10px 5px;
+	margin-left: 0;
+	
+	
+}
+}
+
+@media (max-width:383px)
+{
+	.follow ul li i{
+	font-size: 20px;
+	padding: 10px 2px;
+	margin-left: 0;
+	
+	
+}
+.main img{
+	width: 300px;
+}
+
+}
+
+@media (max-width:310px)
+{
+	.follow ul li i{
+	font-size: 10px;
+	padding: 2px 2px;
+	
+}
+.main img{
+	width: 250px;
+}
+.about-text h1{
+	font-size: 20px;
+}
+.about-text h5{
+	font-size: 15px;
+}
+
+.about-text p{
+	font-size: 12px;
+}
+}

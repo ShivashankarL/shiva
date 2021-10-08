@@ -2,18 +2,38 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<title>Protofolio</title>
-		<link rel="icon" href="logoback.png" type="image/png">
+		<title>Shivashankar L</title>
+		<link rel="icon" href="images/logoback.png" type="image/png">
 			<link rel="stylesheet" type="text/css" href="style.css">
 			<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 			<script src="https://kit.fontawesome.com/ee572462c7.js" crossorigin="anonymous"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+				<script>
+					$(document).ready(function(){
+						
+  							$("nav ul li").on("click", function(){
+    								$("nav ul").css("left", "-100%");
+    								$('#click').prop('checked', false);
+ 								 });
+  							$(".menu-btn").on("click", function(){
+  									$("nav ul").css("left", "0%");
+    								$('#click').prop('checked', false);
+    								
+  							});
+
+  						
+
+
+
+						});
+</script>
 
 </head>
 <body>
-	<nav>
+	<nav id="menu-nav">
 		<div class="logo"><span>Shiva</span>shankar<i class="fas fa-heart" id="hrt" style="margin-top:1px; color: red;"></i></div>
-		<input type="checkbox" id="click">
-			<label for="click" class="menu-btn">
+	
+			<label class="menu-btn">
 				<i class="fas fa-bars"></i>
 			</label>
 		<ul>
@@ -22,9 +42,6 @@
 			</li>
 			<li>
 				<a href="#abt">About</a>
-			</li>
-			<li>
-				<a href="#">Education</a>
 			</li>
 			<li>
 				<a href="#">Youtube</a>
@@ -39,19 +56,25 @@
 		</ul>
 	</nav>
 	<div class="home">
-		<span class="hello">
-			Hello!
-		</span>
-		  &nbsp;I am Shivashankar&nbsp;
-		  <i class="fas fa-heart" style="margin-top:1px; color: red;"></i>
+		<div class="wrapper">
+		<div class="static-txt">I am</div>
+		<ul class="dynamic-txts">
+			<li><span>a Designer</span></li>
+			<li><span>a Developer</span></li>
+			<li><span>a Freelancer</span></li>
+			<li><span>Shivashankar <i class="fas fa-heart" style="margin-top:1px; color: red;"></i></span></li>
+		</ul>
+		
+		 
+		  </div>
 	</div>
 	<div class="about" id="abt">
 		<div class="main">
-		<img src="Shiva.jpg">
+		<img src="images/Shiva.jpg">
 		<div class="about-text">
 			<h1 align="center">About</h1>
 			<h5><span>Freelance</span> Developer</h5>
-			<p>I am a Freelance Web and App Developer. Having an attractive Website & App for buisness makes buisness task easier and attract more clients I build such a websites and apps for a convienient price. I also make Web & App more intercative easy to use attracting more viewers. 
+			<p>Hello, I am a Freelance Web and App Developer. I am MCA Postgraduate at Cambridge college Bengaluru looking for Job as a WEB Developer. Having an attractive Website & App for buisness makes buisness task easier and attract more clients I build such a websites and apps for a convienient price. I also make Web & App more intercative easy to use attracting more viewers. 
 			</p>
 			<div class="follow">
 			<ul>
@@ -67,6 +90,10 @@
 	</div>
 		<br/>
 
+	</div>
+	<div class="youtube">
+		<h3 class="heading">My Youtube Videos</h3>
+		
 	</div>
 </body>
 </html>

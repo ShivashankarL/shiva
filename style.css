@@ -23,6 +23,7 @@ nav .logo{
 .wrapper{
 	display: inline-flex;	
 	justify-content: center;
+	z-index:-1;
 }
 
 .wrapper .static-txt{

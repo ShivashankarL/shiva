@@ -14,27 +14,72 @@ nav .logo{
 
 }
 .home{
-	margin: 0px;
-	padding: 0px;
-	height: 90vh;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	font-weight: 350;
-	font-size: 60px;
+	justify-content: center;
+	min-height: 100vh;
 	
-
+}
+.wrapper{
+	display: inline-flex;	
+	justify-content: center;
 }
 
+.wrapper .static-txt{
+	font-size: 70px;	
+	font-weight: 400;
+}
+.wrapper .dynamic-txts {
+	margin-top: 8px;
+	margin-left: 15px;
+	height: 90px;
+	line-height: 90px;
 
-.home .hello{
+	overflow: hidden;
+}
+.dynamic-txts li{
 	color: crimson;
+	list-style: none;
+	font-size: 70px;
+	font-weight: 500;
+	position: relative;
+	background: #fff;
+	top: 0;
+	animation: slide 8s steps(4) infinite;
+
+}
+@keyframes slide{
+	100%{
+		top: -360px;
+	}
+}
+.dynamic-txts li span {
+	position: relative;
+}
+.dynamic-txts li span::after{
+	content:"";
+	position: absolute;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	background: #fff;
+	border-left: 2px solid crimson;
+	animation: typing 2s steps(14) infinite;
 }
 
-#click{
-	display: none;
+@keyframes typing {
+
+	100%{
+		left: 100%;
+		margin: 0 -35px 0 35px;
+	}
+
 }
+
+
+
+
+
 nav{
 	height: 80px;
 	width: 100%;
@@ -73,9 +118,6 @@ nav .menu-btn i{
 	font-size: 22px;
 	cursor: pointer;
 	display: none;
-}
-#click:checked ~ ul{
-	left: 0%;
 }
 
 .about 
@@ -152,8 +194,19 @@ span {
 }
 @media (max-width:956px)
 {
-.home{
+.wrapper .static-txt{
 	font-size: 50px;
+}
+.wrapper li{
+	font-size: 50px;
+	background: #fff;
+}
+.wrapper .dynamic-txts{
+	margin-top: -7px;
+}
+.dynamic-txts li span::after{
+	position: absolute;
+	height: 108%;
 }
 .main{
 	display: flex;
@@ -173,9 +226,6 @@ nav .menu-btn i{
 	display: block;
 }
 
-#click:checked ~ .menu-btn i:before{
-	content: "\f00d";
-}
 		nav ul{
 		position: fixed;
 		top: 80px;
@@ -202,12 +252,38 @@ nav .menu-btn i{
 
 	}
 }
-
+@media (max-width:521px){
+	.wrapper .static-txt{
+	font-size: 30px;
+}
+.wrapper li{
+	font-size: 30px;
+	background: #fff;
+}
+.wrapper .dynamic-txts{
+	margin-top: -22px;
+}
+.dynamic-txts li span::after{
+	
+	height: 152%;
+}
+}
 @media (max-width:488px)
 {
-	.home{
-		font-size: 35px;
-	}
+	.wrapper .static-txt{
+	font-size: 30px;
+}
+.wrapper li{
+	font-size: 30px;
+	background: #fff;
+}
+.wrapper .dynamic-txts{
+	margin-top: -22px;
+}
+.dynamic-txts li span::after{
+	
+	height: 152%;
+}
 	
 	nav{
 		padding: 0px 10px 0px 10px;
@@ -222,12 +298,27 @@ nav .menu-btn i{
 
 @media (max-width:342px)
 {
-	.home{
-		font-size: 20px;
-	}
+	.wrapper .static-txt{
+	font-size: 20px;
+	background: #fff;
+}
+.wrapper .dynamic-txts{
+	margin-top: -29px;
+}
+.dynamic-txts li span::after{
+
+	height: 205%;
+}
+.dynamic-txts li span{
+	margin-top: 250px;
+	height: 5%;
+}
 	
+	font-size: 20px;
+}
+.wrapper li{
 	nav{
-		padding: 0px 10px 0px 10px;
+		padding: 0px 10px 0px 10px5
 		
 	}
 }

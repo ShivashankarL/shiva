@@ -21,9 +21,10 @@ nav .logo{
 	
 }
 .wrapper{
+	z-index: -1;
 	display: inline-flex;	
 	justify-content: center;
-	z-index:-1;
+	
 }
 
 .wrapper .static-txt{

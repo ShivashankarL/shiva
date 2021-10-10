@@ -24,9 +24,10 @@ nav .logo{
 	z-index: -1;
 	display: inline-flex;	
 	justify-content: center;
-	
 }
-
+.heading {
+	font-size: 35px;
+}
 .wrapper .static-txt{
 	font-size: 70px;	
 	font-weight: 400;
@@ -54,6 +55,49 @@ nav .logo{
 	100%{
 		top: -360px;
 	}
+}
+.cards-holder{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: center;
+	overflow-y: hidden;
+	overflow-x: auto;
+	
+}
+.youtube{
+	padding: 5% 5% 5% 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+
+.cards{
+	display: flex;
+	flex-direction: column;
+	background:#1b1b1b;
+	width: 280px; 
+
+	justify-content: center;
+	align-items: center;
+	padding: 10px 10px 10px 10px;
+	border-radius: 5px;
+	margin-left: 55px;
+}
+.cards .card-up{
+	padding: 10px 10px 10px 10px;
+}
+.cards img{
+	
+	width: 250px;
+}
+.cards .card-down{
+	color: white;
+	text-align: center;
+	height: 40px;
 }
 .dynamic-txts li span {
 	position: relative;
@@ -255,6 +299,12 @@ nav .menu-btn i{
 	}
 }
 @media (max-width:521px){
+	.youtube{
+		background: #1b1b1b;
+	}
+		.youtube h3{
+		color: #fff;
+	}
 	.wrapper .static-txt{
 	font-size: 30px;
 }
@@ -269,6 +319,18 @@ nav .menu-btn i{
 	
 	height: 152%;
 }
+
+.cards-holder{	
+	flex-direction: column;
+	overflow-y: scroll;
+	margin-left: -60px;
+
+}
+
+.cards{
+	margin-top: 20px;
+}
+
 }
 @media (max-width:488px)
 {
@@ -320,7 +382,7 @@ nav .menu-btn i{
 }
 .wrapper li{
 	nav{
-		padding: 0px 10px 0px 10px5
+		padding: 0px 10px 0px 10px;
 		
 	}
 }

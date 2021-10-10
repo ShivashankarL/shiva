@@ -3,11 +3,13 @@
 <head>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<title>Shivashankar L</title>
-		<link rel="icon" href="logoback.png" type="image/png">
+		<link rel="icon" href="images/logoback.png" type="image/png">
 			<link rel="stylesheet" type="text/css" href="style.css">
+			<link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="screen" />
 			<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 			<script src="https://kit.fontawesome.com/ee572462c7.js" crossorigin="anonymous"></script>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 				<script>
 					$(document).ready(function(){
 						
@@ -38,13 +40,13 @@
 			</label>
 		<ul>
 			<li>
-				<a class="active" href="#">Home</a>
+				<a class="active" href="#home">Home</a>
 			</li>
 			<li>
 				<a href="#abt">About</a>
 			</li>
 			<li>
-				<a href="#">Youtube</a>
+				<a href="#youtube">Youtube</a>
 			</li>
 			<li>
 				<a href="#">Follow</a>
@@ -55,7 +57,7 @@
 			
 		</ul>
 	</nav>
-	<div class="home">
+	<div class="home" id="home">
 		<div class="wrapper">
 		<div class="static-txt">I am</div>
 		<ul class="dynamic-txts">
@@ -70,7 +72,7 @@
 	</div>
 	<div class="about" id="abt">
 		<div class="main">
-		<img src="Shiva.jpg">
+		<img src="images/Shiva.jpg">
 		<div class="about-text">
 			<h1 align="center">About</h1>
 			<h5><span>Freelance</span> Developer</h5>
@@ -91,9 +93,85 @@
 		<br/>
 
 	</div>
-	<div class="youtube">
-		<h3 class="heading">My Youtube Videos</h3>
-		
+	<div class="youtube" id="youtube">
+		<h3 class="heading">My Youtube <span class="vid">Videos</span></h3>
+		<br>
+
+	<div class="cards-holder">
+		<div class="cards">
+			<div class="card-up">
+				<a class="venobox" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=6cDRp088Rrs"><img src="images/1.png"/></a>
+			</div>
+			<div class="card-down">
+				Download any book for free!
+			</div>
+		</div> 
+		<div class="cards">
+			<div class="card-up">
+				<a class="venobox" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=1TOe4j1Esyg"><img src="images/2.jpg"/></a>
+			</div>
+			<div class="card-down">
+				Introduction to Stacks!
+			</div>
+		</div> 
+		<div class="cards">
+			<div class="card-up">
+				<a class="venobox" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=DPoo43m2RIk"><img src="images/3.png"/></a>
+			</div>
+			<div class="card-down">
+				Text to PNG Conversion!
+			</div>
+		</div> 
+		<div class="cards">
+			<div class="card-up">
+				<a class="venobox" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=-SJ9YbV97Z8"><img src="images/4.png"/></a>
+			</div>
+			<div class="card-down">
+				Writing first php code!
+			</div>
+		</div> 
 	</div>
+	<div class="cards-holder" style="margin-top: 50px;">
+		<div class="cards">
+			<div class="card-up">
+				<a class="venobox" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=6cDRp088Rrs"><img src="images/1.png"/></a>
+			</div>
+			<div class="card-down">
+				Download any book for free!
+			</div>
+		</div> 
+		<div class="cards">
+			<div class="card-up">
+				<a class="venobox" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=1TOe4j1Esyg"><img src="images/2.jpg"/></a>
+			</div>
+			<div class="card-down">
+				Introduction to Stacks!
+			</div>
+		</div> 
+		<div class="cards">
+			<div class="card-up">
+				<a class="venobox" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=DPoo43m2RIk"><img src="images/3.png"/></a>
+			</div>
+			<div class="card-down">
+				Text to PNG Conversion!
+			</div>
+		</div> 
+		<div class="cards">
+			<div class="card-up">
+				<a class="venobox" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=-SJ9YbV97Z8"><img src="images/4.png"/></a>
+			</div>
+			<div class="card-down">
+				Writing first php code!
+			</div>
+		</div> 
+	</div>
+	</div>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="venobox/venobox.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+    $('.venobox').venobox(); 
+		});
+</script>
 </body>
-</html>
+</html> 
